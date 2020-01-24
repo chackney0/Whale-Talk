@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Whale Talk</title>
+    <script type="text/javascript">
+    let input = prompt('What would you look to translate into whale?');
+
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    let resultArray = [];
+
+    function whaleTalk(input, vowels) {
+        for (var i = 0; i < input.length + 1; i++) {
+            for (var j = 0; j < vowels.length; j++) {
+                if (input[i] == vowels[j]);
+                resultArray.push(input[i]);
+            }
+        }        if (input[i] == 'e' || input[i] == 'u') {
+            resultArray.push(input[i]);
+
+
+        }
+        var myArray = resultArray.join('').toUpperCase();
+        console.log(myArray);
+    }
+
+    whaleTalk(input, vowels)
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
